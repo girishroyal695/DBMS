@@ -3,8 +3,8 @@ mysql> select*from stud2 where marks>(select avg(marks) from stud2);
 +-------+---------+----------+-------+------------+------------+
 | regno | name    | courseno | marks | facultydoj | assesments |
 +-------+---------+----------+-------+------------+------------+
-|     1 | nithish |        1 |    70 |       2001 |          6 |
-|     2 | ram     |        2 |    50 |       2002 |          5 |
+|     1 | girish |        1 |    70 |       2001 |          6 |
+|     2 | towhid   |        2 |    50 |       2002 |          5 |
 +-------+---------+----------+-------+------------+------------+
 2 rows in set (0.11 sec)
 2)
@@ -12,10 +12,10 @@ mysql> select name from stud2 where assesments>1;
 +---------+
 | name    |
 +---------+
-| nithish |
-| ram     |
-| suresh  |
-| ramesh  |
+| girish |
+| towhid  |
+| manju  |
+| karthik  |
 +---------+
 3)
 mysql> select*from faculty order by doj limit 1;
